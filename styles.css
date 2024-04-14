@@ -1,0 +1,345 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    
+    color: #f2f2f2;
+    
+}
+
+
+/* General styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px 0;
+    justify-content: space-between;
+    background-color: #f2f2f2; /* Default background color */
+    color: #333; /* Default text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
+.head1 h1 {
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    height: 65px;
+    margin: 20px;
+    color: #3dc6c1;
+    align-items: center;
+    
+}
+
+.head2 {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    gap: 17px;
+    
+    
+}
+
+.head2 button {
+    background-color: #2e3241;
+    color: white;
+    border: 0;
+    height: 30px;
+    width: 80px;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    background-color: #2E3241;
+    color: white;
+    height: 30px;
+    width: 80px;
+    border-radius: 7px;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.radial-timer {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .progress-ring__circle {
+    transition: stroke-dashoffset 1s linear; /* Add transition for progress bar */
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+  }
+  
+  .timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #3dc6c1;
+  }
+
+.head3 {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    gap: 17px;
+}
+
+.head3 button{
+    background-color: #3dc6c1;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    font-size: 17px;
+    border-radius: 7px;
+    font-family: Oswald, sans-serif;
+    font-weight: 100;
+
+}
+
+
+.selecteddata {
+    margin-top: 20px; /* Add some top margin for spacing */
+    display: flex;
+   justify-content: center;
+   gap: 20px;
+   word-spacing: 10px;
+   margin-bottom: 20px;
+   font-family: Oswald, sans-serif;
+  }
+  
+  .selecteddata h2 {
+    text-align: center; 
+    /* line-height: 20px; */
+    color: #2E3241;
+    font-size:32px ;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-weight: 600;
+  }
+  
+  .selecteddata p {
+    text-align: center; /* Center-align paragraph */
+    font-size: 20px; /* Example font size */
+    color: #3dc6c1; /* Example color */
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+  .table-container{
+    padding: 20px;
+
+  }
+
+  #tickerTable {
+    width: 100%;
+    font-family: Oswald, sans-serif;
+    border-spacing:0 15px ;
+    border-radius: 10px;
+    border-collapse: separate;
+    margin-top: 30px; /* Add some top margin for spacing */
+  }
+  
+  #tickerTable th, #tickerTable td {
+    border: 0px solid; /* Add borders */
+    padding: 10px; /* Add padding to cells */
+    text-align: center;
+    border-radius: 1px;
+  }
+  
+  #tickerTable th {
+    font-size: 15px;
+    font-weight: 600;
+    color: #808288; /* Header text color */
+    
+  }
+  #tickerTable td {
+    padding-bottom: 10px;
+    background-color: #2E3241;  
+  }
+  #tickerTable td:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  #tickerTable td:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+.sethomepage{
+    display: flex;
+    justify-content: center;
+    background-color: #191D28;
+    height: 47px;
+    position: fixed;
+    left: 0;
+    align-items: center;
+    width: 100vw;
+    bottom: 0;
+    z-index: 8;
+    
+    
+}
+.sethomepage button{
+    color: #3dc6c1;
+    border: solid 2px #3dc6c1 ;
+    width: 15%;
+    height: 50%;
+    display: block;
+    background: transparent;
+    border-radius: 5px;
+    padding:6px;
+}
+.sethomepage button:hover{
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    text-decoration: none;
+    
+}
+.footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    padding: 10px;
+    color: #888686;
+    border-top: 1px solid #2e3241;
+    gap: 80%;
+    
+}
+.content{
+    color: #888686;
+}
+.link{
+    color: #888686;
+    cursor: pointer;
+}
+
+
+/* Styles for the slider button */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #3dc6c1;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Dark mode */
+.dark-mode .main{
+    background-color: #191d28;
+}
+.dark-mode .navbar {
+    background-color: #191d28;
+    color: white;
+}
+.dark-mode .selecteddata h2{
+    color: #f2f2f2;
+}
+
+.dark-mode .head1 h1 {
+    color: 3dc6c1;
+}
+
+.dark-mode .dropdown-content {
+    background-color: #2e3241;
+    
+}
+
+.dark-mode .dropdown-content option {
+    color: white;
+}
+
+.dark-mode .dropdown-content option:hover {
+    background-color: #444;
+}
+.dark-mode .footer {
+    border-top: 2px solid #2e3241;
+    
+}
+
+
+/* Light mode */
+.light-mode .navbar {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.light-mode .head1 h1 {
+    color: #3dc6c1;
+}
+
+.light-mode .dropdown-content {
+    background-color: #f2f2f2;
+}
+.light-mode .head2 button{
+    background-color: #f2f2f2;
+}
+.light-mode .dropdown-content option {
+    color: #333;
+}
+
+.light-mode .dropdown-content option:hover {
+    background-color: #bbbbbb;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quadb Tech Data</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="main">
+  <div class="navbar">
+    <div class="head1"><h1>HODLINFO</h1></div>
+    <div class="head2"><button>INR</button>
+
+    <div class="dropdown">
+      <!-- Update button text dynamically -->
+      <select class="dropdown-content" id="dropdownContent">
+        <!-- Options will be dynamically added here -->
+      </select>
+    </div>
+    <button>BUY NOW</button>
+</div>
+<div class="head3">
+    <div id="timer" class="radial-timer">
+        <svg class="progress-ring" width="120" height="120">
+          <circle class="progress-ring__circle" stroke="turquoise"
+           stroke-width="5" fill="transparent" r="20" cx="60" cy="60"></circle>
+        </svg>
+        <div class="timer-text">60</div>
+      </div>
+      <button> Telegram</button>
+    <!-- Slider button for dark/light mode -->
+    <label class="switch">
+      <input type="checkbox" id="modeSwitch">
+      <span class="slider round"></span>
+    </label>
+  </div>
+</div>
+
+<div class="selecteddata" id="selectedData"></div>
+<div class="table-container">
+<table id="tickerTable">
+  <tr>
+    <th>S.No</th>
+    <th>Name</th>
+    <th>Last</th>
+    <th>Buy/Sell Price</th>
+    <th>Volume</th>
+    <th>Base Unit</th>
+  </tr>
+</table>
+</div>
+<div class="footer">
+    <div class="content">Copyright © 2019 HodlInfo.com</div>
+    <div class="link"><a href="mailto:support@hodlinfo.com"></a>Support</div>
+</div>
+
+<div class="sethomepage">
+<button onclick="alert('To set this page as your home page, please manually change it in your browser settings.');">
+   Add Hodlinfo To Home Screen</button>
+</div>
+
+<script src="script.js">
+</script>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
